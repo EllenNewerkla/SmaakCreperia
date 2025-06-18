@@ -35,14 +35,19 @@ cd BACKEND
 cd FRONTEND
 
 3 - Instale as dependencias
-
+npm install
 pip install uvicorn
 python -m uvicorn main:app --reload
 docker ps
 ipconfig
 
-4 - Configure iniciais no FireBase
+4 - Configure o FireBase
 
-- Crie um arquivo firebase_key.json com sua chave de acesso do Firebase.
-- Altere a função inicializate_database() para usar esse arquivo.
+- Crie um projeto no Firebase.
+- Habilite o Authentication (por e-mail/senha).
+- Crie um Realtime Database.
+- Copie suas credenciais e adicione no arquivo firebaseConfig.js.
+
+5 - Inicie o app
+npx expo start
 
